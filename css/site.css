@@ -1,0 +1,100 @@
+.dropdown:hover .dropdown-menu{
+    display:block;
+}
+.dropdown-toggle::after {
+    content: none;
+}
+
+body, header {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    font-size: 25px;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+.headerText{
+    background-color: white;
+    border-radius: 4px;
+}
+
+.imagenHeader {
+    width: 15%;
+    height: auto;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.productImage{
+    width: 50%;
+    height: auto;
+    transition: transform 0.1s ease-in-out;
+    border: 10px ridge #d6c366;
+}
+
+.Pagefooter{
+    background: #f4e65f;
+    /*background: radial-gradient(circle, #f4e65f 0%, #b96d4e 50%, #549c98 100%);*/
+    background: radial-gradient(circle, #f4e65f 0%, #b96d4e 85%, #549c98 100%);
+    color: white;
+}
+
+.productImage:hover {
+    -webkit-transform: scale(1.6);
+}
+
+#navbarLogo:hover {
+    -webkit-transform: scale(1.04);
+}
+
+.headerText:hover {
+    text-shadow: 1px 1px 1px #157347;
+}
+
+.Menu a {
+    transition: transform 0.3s ease-in-out;
+}
+
+.Menu a:hover {
+    transform: scale(1.05);
+}
+
+.logo {
+    transition: transform 1s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.2);
+}
+
+
+.navbar-toggler{
+    background-color: #157347;
+}
+
+main {
+    padding: 40px;
+}
+
+nav {
+    background-image: url(BambooMat.jpg);
+    background-repeat: repeat;
+    /*background-color: #5a6eed;*/
+    box-shadow: #b1b0b0 2px 5px 5px;
+}
+
+.SushiBackground{
+    background-image: url(background.jpg);
+    background-repeat: repeat;
+}
+
+.NeutralBackground {
+    background-color: white;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: groove;
+    padding: 15px;
+}

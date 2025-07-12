@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/site.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <title>TV SUSHI</title>
+</head>
+<body class="SushiBackground">
+    <header>
+        <nav class="d-flex justify-content-between align-items-center py-2 px-3">
+            <a class="order-first" href="Index.html"><img style="border-radius: 8px;" id="navbarLogo" src="media/tvSushi/Logo_Med.png" height="80px"/></a>
+            <form method="post">
+                <ul class="navbar-nav">
+                    <li class="dropdown dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a href="Account.html" class="nav-link headerText active text-decoration-none text-reset p-1">
+                                Usuario1
+                                <i class="bi bi-person-circle"></i>
+                            </a>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><button class="dropdown-item">Cerrar sesión</button></li>
+                        </ul>
+                    </li>
+                </ul>
+            </form>
+        </nav>
+    </header>
+    <main>
+        <div class="container-sm NeutralBackground">
+            <div class="d-flex flex-column-reverse flex-md-row justify-content-between gap-2 mb-2">
+                <div>
+                    <h2 class="fs-1">Camarón tempura Roll</h2>
+                    <p class="fs-3">Un roll delicioso de camarón</p>
+                    <p class="fs-5"><strong>Ingredientes:</strong> Camarones tempura jumbo, surimi y queso crema</p><br>
+                    <p class="fs-5"><strong>Precio:</strong> ₡ 15 000</p>
+                    <p class="fs-5">10 piezas</p>
+                </div>
+                <img class="my-2 productImage align-self-center" src="media/ProductImages/Meal_1.png" />
+            </div>
+            <hr>
+            <div class="mx-1 mx-md-5">
+                <form>
+                    <h2 class="fs-2 mb-3">Reseñas</h2>
+                    <div class="mb-3">
+                        <label for="txa_miReseña" class="form-label fs-5">¡Dejanos tu reseña!</label>
+                        <textarea class="form-control" id="txa_miReseña" rows="1"></textarea>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <a class="btn btn-danger"><i class="bi bi-trash"></i> Eliminar</a>
+                        <a class="btn btn-success">Enviar <i class="bi bi-send"></i></a>
+                    </div>
+                </form>
+            </div>
+            <hr>
+            <div class="mx-1 mx-md-5">
+                <div class="my-1">
+                    <label for="txa_ReseñaUsuario2" class="form-label fs-5"><i class="bi bi-person-square"></i> Usuario2</label>
+                    <textarea readonly class="form-control-plaintext" id="txa_ReseñaUsuario2" rows="3">Me gustó mucho este Roll, 100% recomendado!</textarea>
+                </div>
+                <div class="my-1">
+                    <label for="txa_ReseñaUsuario3" class="form-label fs-5"><i class="bi bi-person-square"></i> Usuario3</label>
+                    <textarea readonly class="form-control-plaintext" id="txa_ReseñaUsuario3" rows="3">Este esta bueno, recomiendo tambien el Atún Roll.</textarea>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <img src="media/tvSushi/logo.png" class="img-fluid logo" style="max-height: 300px;"/>
+        </div>
+    </main>
+    <footer class="position-fixed bottom-0 start-0 m-2">
+        <a href="Index.html" class="btn btn-secondary align-items-center"><h3><i class="bi bi-arrow-return-left me-3"></i>Volver a Inicio</h3></a>
+    </footer>
+</body>
+</html>
