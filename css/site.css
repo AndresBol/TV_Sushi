@@ -98,3 +98,9 @@ nav {
     border-style: groove;
     padding: 15px;
 }
+
+.menu-title
+{
+    color: #05306f;
+    font-weight: 600;
+}
