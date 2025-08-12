@@ -34,12 +34,10 @@
                     const card = document.createElement('div');
                     card.classList.add('col-sm-6', 'col-md-4', 'col-lg-3');
                     card.innerHTML = `
-                <div class="card h-100 shadow-sm">
+                <div class="card h-100 shadow-sm" style="body-radius:20px">
                     <img src="${item.Ruta}" class="card.img.top" alt="${item.Nombre}">
-                    <div class="card-body d-flex flex-column">
+                    <div class="card-body d-flex flex-column border-radius: 10px">
                         <h5 class="card-title">${item.Nombre}</h5>
-                        <p class="card-text flex-grow-1">${item.Descripción}</p>
-                        <p><strong>Ingredientes:</strong>${item.Ingredientes}</p>
                         <p><strong>Porción:</strong>${item.Porcion}</p>
                         <p class="fw-bold text-black">${item.Precio}</p>
                         <a href="Meal.html?id=${item.ID}" class= "btn btn-primary mt-auto">Ver Detalle</a>
@@ -56,8 +54,8 @@
             });
     </script>
 
-<footer class="position-fixed bottom-0 start-0 mn-2">
-    <a href="Index.html" class="btn btn-secondary aling-items-center"><h3><i class="bi bi-arrow-return-left me-3"></i>Volver a Inicio</h3></a>
+<footer class="position-fixed bottom-0 start-0 m-2">
+    <a href="Index.html" class="btn btn-secondary align-items-center"><h3><i class="bi bi-arrow-return-left me-3"></i>Volver a Inicio</h3></a>
 </footer>
 
 </body>
