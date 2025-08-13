@@ -33,13 +33,13 @@
         <div class="container-sm NeutralBackground">
             <div class="d-flex flex-column-reverse flex-md-row justify-content-between gap-2 mb-2">
                 <div>
-                    <h2 class="fs-1">Camarón tempura Roll</h2>
-                    <p class="fs-3">Un roll delicioso de camarón</p>
-                    <p class="fs-5"><strong>Ingredientes:</strong> Camarones tempura jumbo, surimi y queso crema</p><br>
-                    <p class="fs-5"><strong>Precio:</strong> ₡ 15 000</p>
-                    <p class="fs-5">10 piezas</p>
+                    <h2 id="nombreProducto"class="fs-1"></h2>
+                    <p  id="descripcionProducto"class="fs-3"></p>
+                    <p  id="ingredientesProducto"class="fs-5"></p><br>
+                    <p  id="precioProducto" class="fs-5"></p>
+                    <p  id="porcionProducto" class="fs-5"></p>
                 </div>
-                <img class="my-2 productImage align-self-center" src="media/ProductImages/Meal_1.png" />
+                <img id="imagenProducto" class="my-2 productImage align-self-center" src="" />
             </div>
             <hr>
             <div class="mx-1 mx-md-5">
@@ -72,7 +72,9 @@
         </div>
     </main>
     <footer class="position-fixed bottom-0 start-0 m-2">
-        <a href="Index.html" class="btn btn-secondary align-items-center"><h3><i class="bi bi-arrow-return-left me-3"></i>Volver a Inicio</h3></a>
+        <a href="menu.html" class="btn btn-secondary align-items-center"><h3><i class="bi bi-arrow-return-left me-3"></i>Volver al Menu</h3></a>
     </footer>
+
+    <script src="js/meal.js"></script>
 </body>
 </html>
