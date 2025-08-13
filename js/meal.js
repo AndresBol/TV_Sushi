@@ -23,14 +23,14 @@ if(!id)
                     return;
                 }
 
-               document.querySelector("h2.fs-1").textContent = producto.Nombre;
-               document.querySelector("p.fs-3").textContent  = producto.Descripción;
-               document.querySelector("p.fs-5.ingredientes").innerHTML= `<strong>Ingredientes:</strong> ${producto.Ingredientes}`;
+               document.getElementById("nombreProducto").textContent = producto.Nombre;
+               document.getElementById("descripcionProducto").textContent  = producto.Descripción;
+               document.getElementById("ingredientesProducto").innerHTML= `<strong>Ingredientes:</strong> ${producto.Ingredientes}`;
 
-               document.querySelector("p.fs-5.precio").innerHTML= `<strong>Precio:</strong>${producto.Precio}`;
-               document.querySelector("p.fs-5.porcion").innerHTML= `<strong>Porcion:</strong>${producto.Porcion}`;
+               document.getElementById("precioProducto").innerHTML= `<strong>Precio:</strong>${producto.Precio}`;
+               document.getElementById("porcionProducto").innerHTML= `<strong>Porcion:</strong>${producto.Porcion}`;
 
-               document.querySelector(".productImage").src= producto.Ruta;
+               document.getElementById("imagenProducto").src= producto.Ruta;
 
         })
         .catch(error => 
