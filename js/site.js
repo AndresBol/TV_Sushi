@@ -45,6 +45,11 @@
             const carousel = document.getElementById('carouselConveyorBelt');
             const audio = document.getElementById('sushiFlowAudio');
             
+            // Set audio volume to 20%
+            if (audio) {
+                audio.volume = 0.2;
+            }
+            
             loadProducts();
             
             if (carousel) {
