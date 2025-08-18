@@ -14,19 +14,22 @@
   <header>
     <nav class="navbar navbar-expand-sm navbar-light">
       <div class="container-fluid d-flex align-baseline flex-wrap flex-md-nowrap">
-        <a href="Index.html"><img style="border-radius: 8px;" id="navbarLogo" src="media/tvSushi/Logo_Med.png"
-            height="80px" /></a>
+        <a class="order-first" href="Index.html"><img style="border-radius: 8px;" id="navbarLogo"
+            src="media/tvSushi/Logo_Med.png" height="80px" /></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
           aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
           <i class="bi bi-list fs-1 text-white"></i>
         </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo01">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <div class="d-flex justify-content-around my-3">
-                <a href="LogIn.html" class="btn btn-success text-nowrap me-2" aria-current="page">Iniciar Sesión</a>
-                <a href="SignUp.html" class="btn btn-success text-nowrap" aria-current="page">Registrarme</a>
-              </div>
+        <div class="order-last order-sm-1 order-md-last collapse navbar-collapse justify-content-end"
+          id="navbarTogglerDemo01">
+          <ul class="navbar-nav align-items-center">
+            <li class="nav-item me-2">
+              <a href="menu.html" class="btn btn-success text-nowrap" aria-current="page">Menú <i
+                  class="bi bi-cup-straw"></i></a>
+            </li>
+            <li class="nav-item me-2">
+              <a href="formulario.html" class="btn btn-success text-nowrap" aria-current="page">Registro <i
+                  class="bi bi-person-plus"></i></a>
             </li>
           </ul>
         </div>
@@ -118,14 +121,24 @@
       </div>
       <div>
         <h2 class="fs-2"><b>Mapa</b></h2><br>
+
         <iframe width="450" height="250" frameborder="0" style="border:0" referrerpolicy="no-referrer-when-downgrade"
-          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCGMqkxp3-ZjVmvddL-s06nt6ONbQcEd94&q=9.873766,-84.032610&maptype=satellite" allowfullscreen>
+          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCGMqkxp3-ZjVmvddL-s06nt6ONbQcEd94&q=9.873766,-84.032610&maptype=satellite"
+          allowfullscreen>
         </iframe>
-        <br>
+
+        <br><br>
+        <div class="d-flex align-items-center justify-content-between" style="max-width: 450px;">
         <a href="https://maps.app.goo.gl/aFFzzt5QHso3zhLc9" target="_blank"
           style="text-decoration: none; color: black;"><i class="bi bi-geo-alt-fill"></i> Patarrá, San José Province,
           Costa Rica</a>
+
+        <a href="https://www.google.com/maps/dir/?api=1&destination=9.873766,-84.032610&travelmode=driving&dir_action=navigate"
+          target="_blank" class="btn btn-success btn-sm">
+          Cómo llegar
+        </a>
       </div>
+
     </div>
   </main>
   <footer class="position-fixed bottom-0 start-0 m-2">
