@@ -29,6 +29,8 @@ document.getElementById("registroForm").addEventListener("submit", function (e) 
     {
         to_name: document.getElementById("nombre").value,
         to_email: document.getElementById("email").value,
+        cedula: document.getElementById("cedula").value,
+        telefono: document.getElementById("telefono").value,
         fecha_nacimiento: fecha,
         edad: document.getElementById("edad").value,
         ingresos: document.getElementById("ingresos").value,
@@ -49,6 +51,41 @@ document.getElementById("registroForm").addEventListener("submit", function (e) 
             alert("Error al enviar: " + JSON.stringify(error));
             console.error("EmailJS error:", error);
         });
+
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const cedulaInput = document.getElementById("cedula");
+    const nombreInput = document.getElementById("nombre");
+
+    cedulaInput.addEventListener("blur", async () => {
+        const cedula = cedulaInput.value.trim();
+        if (cedula === "") return;
+
+        try {
+
+            const response = await fetch(`https://api.hacienda.go.cr/fe/ae?identificacion=${cedula}`);
+
+            if (!response.ok) {
+                throw new Error("No se puedo consultar la Cédula");
+            }
+
+            const data = await response.json();
+            console.log("Respuesta API:", data);
+
+            if (data.nombre) {
+                nombreInput.value = data.nombre;
+            } else {
+                alert("No se encontró nombre para esta cédula.");
+            }
+        } catch (error) {
+            console.error(error);
+            alert("Error consultando la cédula. Intente de nuevo.");
+        } 
+       
+
+    });
 
 });
 
