@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const nombreInput = document.getElementById("nombre");
 
     cedulaInput.addEventListener("blur", async () => {
-        const cedula = cedulaInput.value.trim();
+        const cedula = cedulaInput.value.trim().replace(/-/g, '');
         if (cedula === "") return;
 
         try {
@@ -81,7 +81,6 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         } catch (error) {
             console.error(error);
-            alert("Error consultando la cédula. Intente de nuevo.");
         } 
        
 
