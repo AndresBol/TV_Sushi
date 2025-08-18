@@ -13,9 +13,34 @@
 <body class="SushiBackground">
 
     <header>
-        <nav class="d-flex justify-content-between align-items-center py-2 px3">
-          <a href="Index.html"><img style="border-radius: 8px;" id="navbarLogo" src="media/tvSushi/Logo_Med.png" height="80px"/></a>
+         <nav class="navbar navbar-expand-sm navbar-light">
+            <div class="container-fluid d-flex align-baseline flex-wrap flex-md-nowrap">
+                <a class="order-first" href="Index.html"><img style="border-radius: 8px;" id="navbarLogo" src="media/tvSushi/Logo_Med.png" height="80px"/></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="bi bi-list fs-1 text-white"></i>
+                </button>
+                <form class="order-2 container-fluid mx-1 mx-sm-5 my-3">
+                    <div class="input-group">
+                        <span class="input-group-text border-white"
+                            style="background-color: #ffffff; border-radius: 20px 0 0 20px;" id="basic-addon1"><i
+                                class="bi bi-search"></i></span>
+                        <input id = "buscador" class="form-control border-white shadow-none"
+                            style="background-color: #ffffff; border-radius: 0 20px 20px 0;" type="text"
+                            placeholder="Buscá un producto" aria-label="Buscá un producto">
+                    </div>
+                </form> 
+                <div class="order-last order-sm-1 order-md-last collapse navbar-collapse justify-content-end" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav align-items-center">
+                        <li class="nav-item me-2">
+                         <a href="formulario.html" class="btn btn-success text-nowrap" aria-current="page">Registro <i class="bi bi-person-plus"></i></a> 
+                         </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
+
     </header>
 
     <main class="container my-5">
@@ -54,9 +79,13 @@
             });
     </script>
 
-<footer class="position-fixed bottom-0 start-0 m-2">
-    <a href="Index.html" class="btn btn-secondary align-items-center"><h3><i class="bi bi-arrow-return-left me-3"></i>Volver a Inicio</h3></a>
-</footer>
+    <footer class="position-fixed bottom-0 start-0 m-2">
+        <a href="Index.html" class="btn btn-secondary align-items-center">
+            <h3><i class="bi bi-arrow-return-left me-3"></i>Volver a Inicio</h3>
+        </a>
+    </footer>
+
+    <script src="js/filtromenu.js"></script>
 
 </body>
 
