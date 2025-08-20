@@ -33,7 +33,7 @@ function mostrarProductos(lista) {
                         <h5 class="card-title">${item.Nombre}</h5>
                         <p><strong>Porción:</strong>${item.Porcion}</p>
                         <p class="fw-bold text-black">${item.Precio}</p>
-                        <a href="Meal.html?id=${item.ID}" class= "btn btn-primary mt-auto">Ver Detalle</a>
+                        <a href="Meal.html?id=${item.ID}" class= "btn btn-success mt-auto">Ver Detalle</a>
                   </div>
 
                 </div>        
